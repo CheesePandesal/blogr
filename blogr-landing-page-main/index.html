@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Overpass:wght@300;600&family=Ubuntu:wght@400;500;700&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/9b287ec78d.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="style.css">
+  
+  <title>Frontend Mentor | [Blogr]</title>
+
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+  <header>
+    <nav>
+      <div class="left-nav">
+        <img src="/images/logo.svg" alt="">
+    <div class="dropdowns">
+      <li class="dropdown">
+        <div class="select">
+          <span class="selected">Product</span>
+          <span id="svgThree" class="icon"><svg width="10" height="9" viewBox="0 0 16 9" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M15 1L8.70711 7.29289C8.31658 7.68342 7.68342 7.68342 7.29289 7.29289L1 0.999999" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg></span>
+      </div>
+      <ul class="product-ul menu">
+        <li><a href="#">Overview</a></li>
+        <li><a href="#">Pricing</a></li>
+        <li><a href="#">Marketplace</a></li>
+        <li><a href="#">Features</a></li>
+        <li><a href="#">Integrations</a></li>
+  
+      </ul>
+      </li>
+      <li class="dropdown">
+        <div class="select">
+          <span class="select">Company</span>
+          <span id="svgThree" class="icon"><svg width="10" height="9" viewBox="0 0 16 9" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M15 1L8.70711 7.29289C8.31658 7.68342 7.68342 7.68342 7.29289 7.29289L1 0.999999" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg></span>
+      </div>
+      <ul class="company-ul menu">
+        <li><a href="#">About</a></li>
+        <li><a href="#">Team</a></li>
+        <li><a href="#">Blog</a></li>
+        <li><a href="#">Careers</a></li>
+      </ul>
+      </li>
+      <li class="dropdown">
+        <div class="select">
+          <span class="selected">Connect</span>
+          <span id="svgThree" class="icon"><svg width="10" height="9" viewBox="0 0 16 9" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M15 1L8.70711 7.29289C8.31658 7.68342 7.68342 7.68342 7.29289 7.29289L1 0.999999" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg></span>
+      </div>
+      <ul class="connect-ul menu">
+        <li><a href="#">Contact</a></li>
+        <li><a href="#">Newsletter</a></li>
+        <li><a href="#">LinkedIn</a></li>
+  
+      </ul>
+      </li>
+    </div>
+      </div>
+      <div class="right-nav">
+        <button class="login button">Login</button>
+        <button class="sign-up button">Sign Up</button>
+      </div>
+      <div class="menu-bar">
+        <i class="fa-solid fa-bars menuu" id="menuButton"></i>
+      </div>
+        
+      <div class="menu-mobile">
+        <div class="dropdowns-desktop">
+          <li class="dropdown">
+            <div class="select">
+              <span class="selected">Product</span>
+              <span id="svgThree" class="icon"><svg width="10" height="9" viewBox="0 0 16 9" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M15 1L8.70711 7.29289C8.31658 7.68342 7.68342 7.68342 7.29289 7.29289L1 0.999999" stroke="#ff7a6b" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"></path></svg></span>
+          </div>
+          <ul class="product-ul menu">
+            <li><a href="#">Overview</a></li>
+            <li><a href="#">Pricing</a></li>
+            <li><a href="#">Marketplace</a></li>
+            <li><a href="#">Features</a></li>
+            <li><a href="#">Integrations</a></li>
+      
+          </ul>
+          </li>
+          <li class="dropdown">
+            <div class="select">
+              <span class="selected">Company</span>
+              <span id="svgThree" class="icon"><svg width="10" height="9" viewBox="0 0 16 9" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M15 1L8.70711 7.29289C8.31658 7.68342 7.68342 7.68342 7.29289 7.29289L1 0.999999" stroke="#ff7a6b" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"></path></svg></span>
+          </div>
+          <ul class="company-ul menu">
+            <li><a href="#">About</a></li>
+            <li><a href="#">Team</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Careers</a></li>
+          </ul>
+          </li>
+          <li class="dropdown">
+            <div class="select">
+              <span class="selected">Connect</span>
+              <span id="svgThree" class="icon"><svg width="10" height="9" viewBox="0 0 16 9" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M15 1L8.70711 7.29289C8.31658 7.68342 7.68342 7.68342 7.29289 7.29289L1 0.999999" stroke="#ff7a6b" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"></path></svg></span>
+          </div>
+          <ul class="connect-ul menu">
+            <li><a href="#">Contact</a></li>
+            <li><a href="#">Newsletter</a></li>
+            <li><a href="#">LinkedIn</a></li>
+      
+          </ul>
+          </li>
+        </div>
+        <div class="loginsignupbutton">
+          <button class="login-button">Login</button>
+        <button class="sign-up-button">Sign Up</button>
+        </div>
+      </div>
+      
+        </div>
+    
+    
+      
+      
+    </nav>
+
+    <div class="text-box">
+      <div class="words">
+        <h1>A modern publishing platform</h1>
+      <p>Grow your audience and build your online brand</p>
+      </div>
+      <div class="buttons">
+        <button class="start main button">Start for Free</button>
+        <button class="learn-more main button">Learn More</button>
+      </div>
+    </div>
+  </header>
+  <section class="designed">
+    <h1>Designed for the future</h1>
+    <div class="designed__content">
+        <div class="content__1">
+          <h2>Introducing an extensible editor</h2>
+          <p>Blogr features an exceedingly interface which lets you focus on one thing; 
+            creating content. The editor supports management of multiple blogs and allows easy manipulation
+            of embeds such as images, videos, and Markdown. Extensibility with plugins and themes provide easy
+            ways to add functionality or change the looks of a blog.
+          </p>
+        </div>
+        <div class="content__2">
+          <h2>Robust content management</h2>
+          <p>Flexible content management enables users to easily move through posts. Increase the usability 
+            of your blog by adding customized categories, sections, format, or flow. With this functionality, you're in 
+            full control. 
+          </p>
+        </div>
+    </div>
+    <img src="/images/illustration-editor-desktop.svg" class="circle" alt="">
+  </section>
+  <section class="state">
+    <div class="phones-bg">
+      <img src="/images/bg-pattern-circles.svg" class="circles" alt="">
+    </div>
+    <div class="flex-wrap">
+      <img src="/images/illustration-phones.svg" class="cellphone" alt="">
+      <div class="state-content">
+      <h1>State of the Art Infrastructure</h1>
+      <p>With reliability and speed in mind, worldwide data centers provide the backbone 
+        for ultra-fast connectivity. This ensures your site will load instantly, no matter where your readers
+        are, keeping your site competitive. 
+      </p>
+    </div>
+    </div>
+    
+  </section>
+  <section class="designed">
+    <h1></h1>
+    <div class="designed__content reversed">
+        <div class="content__1">
+          <h2>Free, open, simple</h2>
+          <p>Blogr is a free and open source application backed by a large community of helpful
+            developers. It supports features such as code syntax highlighting, RSS feeds, social media integration,
+            third-party commenting tools, and works seamlessly with Google Analytics. The architecture is clean
+            and is relatively easy to learn. 
+          </p>
+        </div>
+        <div class="content__2">
+          <h2>Powerful tooling</h2>
+          <p>Batteries included. We built a simple and straightforward CLI tool that 
+            makes customization and deployment a breeze, but capable of producing even the most complicated sites. 
+          </p>
+        </div>
+    </div>
+    <img src="/images/illustration-laptop-desktop.svg" class="laptop-desktop" alt="">
+  </section>
+  <footer>
+    <div class="footer-content">
+
+
+    <div class="logo">
+      <img src="/images/logo.svg" alt="">
+    </div>
+    <div class="product-footer">
+      <strong>Product</strong>
+      <ul>
+        <li><a href="#">Overview</a></li>
+        <li><a href="#">Pricing</a></li>
+        <li><a href="#">Marketplace</a></li>
+        <li><a href="#">Features</a></li>
+        <li><a href="#">Integrations</a></li>
+      </ul>
+    </div>
+    <div class="product-footer">
+      <strong>Company</strong>
+      <ul>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Team</a></li>
+        <li><a href="#">Blog</a></li>
+        <li><a href="#">Careers</a></li>
+      </ul>
+    </div>
+    <div class="product-footer">
+      <strong>Connect</strong>
+      <ul>
+        <li><a href="#">Contact</a></li>
+        <li><a href="#">Newsletter</a></li>
+        <li><a href="#">LinkedIn</a></li>
+
+      </ul>
+    </div>
+  </div>
+  </footer>
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Justine Harvey Taningco</a>.
+  </div>
+  <script src="nav.js"></script>
+</body>
+</html>

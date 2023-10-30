@@ -1,0 +1,597 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+    font-family: 'Ubuntu', sans-serif;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+header{
+    width: 100%;
+    background: #ff856e url(/images/bg-pattern-intro-desktop.svg) no-repeat fixed center;
+    min-height: 80vh;
+    width: 100%;
+    border-bottom-left-radius: 8rem;
+}
+nav {
+	display: flex;
+	text-decoration: none;
+    justify-content: space-between;
+    padding: 40px 10%;
+    align-items: center;
+    font-family: 'Ubuntu', sans-serif;
+    
+    
+}
+.left-nav {
+    display: flex;
+    gap: 3rem;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: 500;
+}
+button {
+    font-size: 1rem;
+    font-weight: 500;
+    
+}
+
+.right-nav {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.right-nav .login {
+    background: transparent;
+    color: #fff;
+    border: none;
+    font-family: 'Ubuntu', sans-serif;
+    
+}
+
+.right-nav .sign-up {
+    background-color:hsla(0,0%,100%,1);
+    color: #ff856e;
+    padding: 1rem 2.6rem;
+    border-radius: 50px;
+    border: none;
+    font-family: 'Ubuntu', sans-serif;
+}
+.right-nav .sign-up:hover {
+    background-color:hsla(0,0%,100%,0.5);
+    color: #fff;
+    font-weight: 700;
+}
+.dropdowns {
+    display: flex;
+    justify-content: space-between;
+}
+.dropdowns span {
+    margin-right: 10px;
+
+}
+.dropdown {
+    margin-right: 20px;
+}
+
+.select {
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 0.5em;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+
+li {
+    list-style: none;
+}
+
+
+.menu {
+    list-style: none;
+    padding: 1.5em 1em;
+    box-shadow: 0 0.5em 1em rgba(0, 0, 0, 0.2);
+    border-radius: 0.5em;
+    color: hsl(208, 49%, 24%);
+    background: white;
+    position: absolute;
+    top: 3em;
+    width: 125px;
+    left: -1.5em;
+    z-index: 3;
+    display: none;
+    transition: 0.4s linear;
+}
+.clicked {
+    display: block;
+}
+.menu li {
+    padding: 0.5em;
+
+}
+.product-ul {
+    left: -115px;
+}
+.company-ul {
+    left: -64px;
+}
+.menu li a{
+    text-decoration: none;
+    color: #24242c;
+}
+.menu li a:hover {
+    font-weight: 700;
+}
+.dropdown {
+    position: relative;
+}
+.text-box {
+    width: 90%;
+    color: #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.words {
+    display: flex;
+    flex-direction: column;
+    gap: 2.5rem;
+}
+body {
+    overflow-x: hidden;
+}
+.words h1 {
+    font-size: 4.5rem;
+}
+
+.words p {
+    font-size: 1.5rem;
+}
+.buttons {
+    margin-top: 4.5rem;
+}
+
+.main {
+    padding: 1.2rem 2.4rem;
+    border-radius: 30px;
+    font-weight: 500;
+    font-size: 18px;
+    font-family: 'Ubuntu', sans-serif;
+}
+.start {
+    border: none;
+    color: #ff856e;
+    margin-right: 1em;
+}
+
+.learn-more {
+    border: 1px solid #fff;
+    background: transparent;
+    color: #fff;
+}
+
+.main {
+    padding: 1rem;
+}
+
+.clicked {
+    display: block;
+}
+
+section{
+    min-height: 100vh;
+    padding: 6rem 10%;
+    position: relative;
+}
+
+section h1 {
+    text-align: center;
+    color: hsl(208, 49%, 24%);
+    font-size: 2.5rem;
+    padding-bottom: 7rem;
+    font-weight: 500;
+}
+section h2 {
+    color: hsl(208, 49%, 24%);
+    font-size: 1.7rem;
+    font-weight: 500;
+    
+}
+.designed {
+    overflow: hidden;
+}
+.designed__content p {
+    color: hsl(207, 13%, 34%);
+    line-height: 2.0;
+}
+.designed__content {
+    display: flex;
+    flex-direction: column;
+    gap: 4em;
+}
+.designed__content div {
+    width: 32rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.circle {
+    position: absolute;
+    top: 17px;
+    right: -252px;
+}
+
+.state{
+    display: flex;
+    align-items: center;
+    padding: 0rem 8%;
+    min-height: 40vh;
+    position: relative;
+    color: white;
+}
+
+.flex-wrap {
+    display: flex;
+    gap: 3rem;
+    align-items: center;
+
+}
+
+
+.state-content h1 {
+    padding-bottom: 3rem;
+    text-align: unset;
+    color: white;
+}
+.state-content p {
+    line-height: 2.0;
+}
+
+.phones-bg {
+    background: linear-gradient(180deg, hsl(237, 17%, 21%) 0%,
+    hsl(237,23%,32%) 100%);
+    position: absolute;
+    z-index: -2;
+    inset: 4rem 0rem 7rem;
+    border-bottom-left-radius: 6rem;
+    border-top-right-radius: 6rem;
+    overflow: hidden;
+}
+.circles {
+    position: absolute;
+    z-index: -1;
+    top: -100%;
+    left: -5%;
+    right: 0;
+}
+.flex-reverse {
+    display: flex;
+    gap: 3rem;
+    flex-wrap: wrap-reverse;
+}
+
+.container {
+    max-width: 1500px;
+    margin-inline: auto;
+}
+.text-group {
+    display: grid;
+    gap: 2rem;
+}
+
+.flex-child {
+    align-content: center;
+    flex: 1 1 30%;
+}
+.laptop {
+    position: absolute;
+}
+
+.reversed {
+    align-items: end;
+}
+
+.laptop-desktop {
+    position: absolute;
+    top: 32px;
+    left: -18em;
+}
+
+footer {
+    
+    border-top-right-radius: 6rem;
+    background: #24242c;
+    padding: 5.5rem 17% 5.5rem 10%;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+}
+.product-footer {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    color: white;
+    padding-top: 1rem;
+}
+
+.product-footer ul li {
+    padding: 0.6rem 0rem;
+}
+
+.product-footer ul li a {
+    text-decoration: none;
+    color: #9fa5b5;
+}
+
+.product-footer ul li a:hover {
+    text-decoration: underline;
+}
+button {
+    cursor: pointer;
+}
+
+.transform {
+    transform: rotate(180deg);
+}
+
+.icon {
+    transition: transform 0.4s linear;
+  }
+
+/*-------------FOR MOBILE---------------*/
+.menu-bar {
+    display: none;
+}
+
+.menu-bar i{
+    color: white;
+    font-size: 2rem;
+
+}
+.active {
+    display: block;
+}
+
+.menu-mobile.active {
+    display: block;
+}
+
+.loginsignupbutton {
+    margin-top: 2rem;
+    text-align: center;
+    font-family: 'Ubuntu', sans-serif;
+}
+.loginsignupbutton .login-button {
+    background: none;
+    border: none;
+    padding: 1rem;
+   width: 100%;
+   font-family: 'Ubuntu', sans-serif;
+
+}
+.freeze {
+    overflow: hidden;
+}
+
+.close {
+    display: none;
+}
+
+
+.menuu.remove {
+    display: none;
+}
+.menu-bar .menuu.add {
+    display: block;
+}
+
+
+.menu-bar .close.add {
+    display: block;
+}
+
+.loginsignupbutton .sign-up-button {
+    padding: 0.8rem 2.5rem;
+    color: white;
+    background: #ff7a6b;
+    border: none;
+    border-radius: 30px;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.menu-mobile .dropdown span {
+    color: hsl(208, 49%, 24%);
+    font-weight: 500;
+}
+.menu-mobile .dropdown .selected {
+    margin-right: 4px;
+}
+.menu-mobile .dropdowns-desktop{
+    padding: 1rem 0rem;
+    border-bottom: 2px solid #efeff1;;
+}
+.menu-mobile .dropdowns-desktop .dropdown {
+    margin:0;
+}
+.menu-mobile .dropdown .select {
+    text-align: center;
+    padding: 1.25rem;
+    
+}
+.menu-mobile .dropdowns-desktop .dropdown .menu {
+    position: relative;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background: #efeff1;
+    width: 100%;
+    margin: 19px 0px;
+    box-shadow: none;
+    padding: 0;
+    text-align: center;
+}
+.menu-mobile {
+    display: none;
+}
+@media only screen and (max-width: 889px) {
+    .menu-bar {
+        display: block;
+    }
+   .dropdowns {
+        display: none;
+   }
+   .right-nav {
+        display: none;
+   }
+   .menu-mobile {
+        position: absolute;
+   }
+   .select {
+        display: block;
+   }
+   .select .select {
+        margin-right: 10px;
+   }
+   .cellphone {
+    width: 400px;
+   }
+   .flex-wrap {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+   }
+   .circles {
+    top: -62%;
+    left: -79%;
+   }
+   header {
+    min-height: 84vh;
+   }
+   .words p {
+    font-size: 1.20rem;
+   }
+   .menu-mobile {
+    background: white;
+    padding: 1rem 2rem;
+    z-index: 4;
+    right: -158px;
+    min-width: 250px;
+    min-height: 72vh;
+    max-height: 72vh;
+    border-radius: 10px;
+    top: 53%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    overflow-y: auto;
+    display: none;
+    transition: 0.4s ease;
+
+}
+
+.words h1 {
+    font-size: 2.4rem;
+}
+.state {
+    flex-direction: column;
+
+}
+.main {
+    padding: 1rem 1.4rem;
+}
+.state-content {
+    width: 90%;
+}
+.phones-bg {
+    inset: 9rem 0rem -9rem;
+}
+.circle, .laptop-desktop {
+    position: relative;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    order: 2;
+}
+.designed__content .content__1 {
+    width: 100%;
+}
+
+.designed__content .content__2 {
+    width: 100%;
+}
+.designed {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+.designed h1 {
+    order: 1;
+}
+.footer-content {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+.designed__content {
+    order: 3;
+}
+.footer-content .logo {
+    margin-bottom: 30px;
+}
+}
+
